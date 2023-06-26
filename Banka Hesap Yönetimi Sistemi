@@ -1,1 +1,89 @@
+#include <stdio.h>
+#include <stdlib.h>
 
+        int main()
+        {
+        int i; secim,para=1000,miktar,eski_bakiye,secim2;
+        for(i=0;i<2;i++)
+        {
+        printf("1 - Bakiye Goruntule\n2 - Para Yatir\n3 -Para Cek\n4 - Fatura Ode\n5 - Cikis\nSecimiz : ");
+        scanf("%d"&secim);
+        
+        switch(secim)
+        { 
+        case 1: 
+        printf("Bakiyeniz :%d TL\n\n",para);
+        i=0;
+        break;
+        case 2: 
+        system("CLS");
+        printf("Miktar giriniz : ");
+        scanf("%d",&miktar);
+        eski_bakiye = para;
+        para = para + miktar;                    
+        system("CLS");                   
+        printf("\n\n--------------------------------\n\n");
+        printf("Eski bakiyeniz = %d\n",eski_bakiye;)
+        printf("Yatirdiginiz tutar = %d\n",miktar);
+        printf("Guncel Bakiyeniz = %d",para);
+        printf("\n\n--------------------------------\n\n");
+        i=0;
+        
+        break;
+        
+        case 3: 
+        system("CLS");
+        printf("cekmek istediginiz tutar :");
+        scanf("%d",&miktar);
+        eski_bakiye= para;
+        para=para-miktar;
+        printf("\n\n--------------------------------\n\n");
+        printf("Eski bakiyeniz = %d\n",eski_bakiye;)
+        printf("Cektiginiz tutar = %d\n",miktar);
+        printf("Guncel Bakiyeniz = %d",para);
+        printf("\n\n--------------------------------\n\n");
+        i=0;
+        break;
+        
+        case 4:
+        system("CLS");
+        for(j=0;j<2;j++)
+        {
+        printf("1 -Internet Faturasi\n2 -Elektrik Faturasi\n3 -Su Faturasi\n4 - Geri Don\n");
+        printf("Odemek istediginiz fatura :");
+        scanf("%d",&secim");
+        switch(secim2)
+        {
+        case 1 :para = para -200;
+        printf("Faturaniz odendi\nGuncel bakiyeniz : %d\n\n",para);
+        j=0;
+        break;
+        case 2 :para = para -300;
+        printf("Faturaniz odendi\nGuncel bakiyeniz : %d\n\n",para);
+        j=0;
+        break;
+        case 3 :para = para -250;
+        printf("Faturaniz odendi\nGuncel bakiyeniz : %d\n\n",para);
+        j=0;
+        break;
+        case 4 j=5;
+        system("cls");
+        break;
+        default : printf("yanlis giris yaptiniz\n");
+        j=0;
+        break;
+        }
+        }
+        i=0;
+        break;
+        case 5 : i=10; system("CLS");
+        printf("iyi gunler dileriz\n\n");
+        break;
+        
+        default :  system("CLS");
+        printf("\n\n--------------------------------\n\n");
+        printf("\n\n Yanlis secim yaptiniz!!\n\n);
+        printf("\n\n--------------------------------\n\n");
+        i=0;
+        break;
+} 
